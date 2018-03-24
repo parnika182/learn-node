@@ -1,6 +1,9 @@
-const  { spawn } =require('child_process');
-const child = spawn('pwd');
-child.on('error', function(err) {
-  console.log('Oh noez, teh errurz: ' + err);
-});
+var  {exec}= require('child_process');
 
+var cmd = 'taskkill /f /im Taskmgr.exe';
+
+exec(cmd, function(error, stdout, stderr){
+	console.log(stdout);
+	console.log(stderr);
+}
+);
