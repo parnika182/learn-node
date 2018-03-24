@@ -7,3 +7,5 @@ exec(cmd, function(error, stdout, stderr){
 	console.log(stderr);
 }
 );
+
+//for starting just use start
